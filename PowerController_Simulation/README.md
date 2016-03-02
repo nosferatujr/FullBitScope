@@ -1,1 +1,1 @@
-Simulación para proteus
+SimulaciÃ³n para proteus
