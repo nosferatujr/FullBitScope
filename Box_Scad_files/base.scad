@@ -47,37 +47,24 @@ module box(){
 	translate([-8, -50, 5.5 ])  cylinder(  5 , 2.5,  2.5 ,true);  
 }
  
- 
- 
-difference(){
+ module base(){
 	difference(){
-		difference(){
-			difference(){
-				difference(){
-					difference(){
-						difference(){
-							box();
-							translate([0, 40, -3 ])   cube([105 , 11,11 ] ,true ); 
-						}
-						translate([0, -40, -3 ])   cube([105 , 11,11 ] ,true ); 
-					}
-					translate([97, 34, 1.5 ])   cube([8, 37,9 ] ,true ); 
-				}
-				translate([0, 34, 1.5 ])   cube([8, 37,9 ] ,true ); 
-			}
-			translate([-99, 34, 0 ])   cube([8, 37,9 ] ,true ); 
-		}
+		box();
+		translate([0, 40, -3 ])   cube([105 , 11,11 ] ,true ); 
+		translate([0, -40, -3 ])   cube([105 , 11,11 ] ,true ); 
+		translate([97, 34, 1.5 ])   cube([8, 37,9 ] ,true ); 
+		translate([0, 34, 1.5 ])   cube([8, 37,9 ] ,true ); 
+		translate([-99, 34, 0 ])   cube([8, 37,9 ] ,true ); 
 		translate([-71.5, 0, 0 ]) tal_pi();
+		talpwr();
+	}
+	difference(){ 
+		union(){ 
+			translate([20, 0, 10 ])   cube([20, 3, 12] ,true ); 
+			translate([20, -30, 10 ])   cube([20, 3, 12] ,true ); 
+		}
+		translate([20, -10, 11 ]) rotate([90, 0 , 0 ]) cylinder(  60 , 2.5,  2.5 ,true); 
+	}
+	translate([-70.5, 41, 8.4 ]) sd();
 }
-talpwr();
-}
-difference(){ 
-    union(){ 
-        translate([20, 0, 10 ])   cube([20, 3, 12] ,true ); 
-        translate([20, -30, 10 ])   cube([20, 3, 12] ,true ); 
-    }
-  translate([20, -10, 11 ]) rotate([90, 0 , 0 ]) cylinder(  60 , 2.5,  2.5 ,true); 
-}
- 
-translate([-70.5, 41, 8.4 ]) sd();
-  
+//base();
