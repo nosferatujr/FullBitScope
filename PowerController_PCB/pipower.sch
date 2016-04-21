@@ -7406,6 +7406,8 @@ W = angled&lt;p&gt;
 <part name="SV2" library="con-lstb" deviceset="MA04-1" device=""/>
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
 <part name="JP1" library="daspilker" deviceset="USB-RECEPTABLE" device=""/>
+<part name="VDD6" library="supply1" deviceset="VDD" device=""/>
+<part name="VDD7" library="supply1" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7498,6 +7500,8 @@ W = angled&lt;p&gt;
 <instance part="SV2" gate="1" x="162.56" y="55.88" rot="MR0"/>
 <instance part="SJ1" gate="1" x="15.24" y="63.5"/>
 <instance part="JP1" gate="G$1" x="-15.24" y="15.24" rot="MR0"/>
+<instance part="VDD6" gate="G$1" x="86.36" y="142.24"/>
+<instance part="VDD7" gate="G$1" x="91.44" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -7619,6 +7623,22 @@ W = angled&lt;p&gt;
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="0" y1="63.5" x2="0" y2="66.04" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="139.7" x2="86.36" y2="139.7" width="0.1524" layer="91"/>
+<junction x="104.14" y="139.7"/>
+<pinref part="VDD6" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
+<junction x="101.6" y="96.52"/>
+<pinref part="VDD7" gate="G$1" pin="VDD"/>
+</segment>
 </net>
 <net name="N$10" class="0">
 <segment>
@@ -7724,13 +7744,6 @@ W = angled&lt;p&gt;
 <junction x="101.6" y="86.36"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
@@ -7738,13 +7751,6 @@ W = angled&lt;p&gt;
 <wire x1="132.08" y1="96.52" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="1" pin="3"/>
 <wire x1="132.08" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="S"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">

@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.003125" unitdist="mic" unit="mm" style="lines" multiple="1" display="no" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,9 +23,9 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -2092,6 +2092,25 @@ design rules under a new name.</description>
 <wire x1="24.84285" y1="11.96895" x2="24.84285" y2="14.460178125" width="0.254" layer="16"/>
 <wire x1="24.84285" y1="14.460178125" x2="25.174975" y2="14.792303125" width="0.254" layer="16"/>
 <wire x1="25.174975" y1="14.792303125" x2="27.666203125" y2="14.792303125" width="0.254" layer="16"/>
+<contactref element="Q1" pad="3"/>
+<contactref element="R6" pad="2"/>
+<wire x1="33.700209375" y1="13.376625" x2="33.85518125" y2="13.221653125" width="0.254" layer="1"/>
+<wire x1="33.85518125" y1="13.221653125" x2="33.85518125" y2="12.099440625" width="0.254" layer="1"/>
+<wire x1="33.85518125" y1="12.099440625" x2="34.187575" y2="11.767046875" width="0.254" layer="1"/>
+<wire x1="34.187575" y1="11.767046875" x2="36.23956875" y2="11.767046875" width="0.254" layer="1"/>
+<contactref element="Q2" pad="3"/>
+<contactref element="R5" pad="2"/>
+<wire x1="36.146190625" y1="16.289803125" x2="36.057484375" y2="16.378509375" width="0.254" layer="16"/>
+<wire x1="36.057484375" y1="16.378509375" x2="33.781503125" y2="16.378509375" width="0.254" layer="16"/>
+<wire x1="33.781503125" y1="16.378509375" x2="33.706196875" y2="16.303203125" width="0.254" layer="16"/>
+<wire x1="33.706196875" y1="16.303203125" x2="33.706196875" y2="15.254034375" width="0.254" layer="16"/>
+<wire x1="33.781503125" y1="16.378509375" x2="33.67025" y2="16.378509375" width="0.4064" layer="16"/>
+<wire x1="33.67025" y1="16.378509375" x2="33.67025" y2="15.255309375" width="0.4064" layer="16"/>
+<wire x1="33.67025" y1="15.255309375" x2="32.077278125" y2="15.255309375" width="0.4064" layer="16"/>
+<wire x1="32.077278125" y1="15.255309375" x2="32.077278125" y2="14.655459375" width="0.4064" layer="16"/>
+<wire x1="32.077278125" y1="14.655459375" x2="27.666203125" y2="14.655459375" width="0.4064" layer="16"/>
+<wire x1="27.666203125" y1="14.655459375" x2="27.666203125" y2="14.792303125" width="0.4064" layer="16"/>
+<wire x1="33.706196875" y1="15.254034375" x2="33.700209375" y2="13.376625" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$10">
 <contactref element="IC1" pad="2"/>
@@ -2211,14 +2230,6 @@ design rules under a new name.</description>
 <wire x1="32.66405" y1="11.86415625" x2="30.766240625" y2="9.966346875" width="0.254" layer="16"/>
 <wire x1="30.766240625" y1="9.966346875" x2="30.766240625" y2="5.63325" width="0.254" layer="16"/>
 </signal>
-<signal name="N$4">
-<contactref element="Q2" pad="3"/>
-<contactref element="R5" pad="2"/>
-<wire x1="36.146190625" y1="16.289803125" x2="36.057484375" y2="16.378509375" width="0.254" layer="16"/>
-<wire x1="36.057484375" y1="16.378509375" x2="33.781503125" y2="16.378509375" width="0.254" layer="16"/>
-<wire x1="33.781503125" y1="16.378509375" x2="33.706196875" y2="16.303203125" width="0.254" layer="16"/>
-<wire x1="33.706196875" y1="16.303203125" x2="33.706196875" y2="15.254034375" width="0.254" layer="16"/>
-</signal>
 <signal name="N$8">
 <contactref element="Q2" pad="4"/>
 <contactref element="SV2" pad="3"/>
@@ -2226,14 +2237,6 @@ design rules under a new name.</description>
 <wire x1="39.786284375" y1="3.217540625" x2="39.786284375" y2="13.523909375" width="0.254" layer="16"/>
 <wire x1="39.786284375" y1="13.523909375" x2="40.272178125" y2="14.009803125" width="0.254" layer="16"/>
 <wire x1="40.272178125" y1="14.009803125" x2="43.446190625" y2="14.009803125" width="0.254" layer="16"/>
-</signal>
-<signal name="N$12">
-<contactref element="Q1" pad="3"/>
-<contactref element="R6" pad="2"/>
-<wire x1="33.700209375" y1="13.376625" x2="33.85518125" y2="13.221653125" width="0.254" layer="1"/>
-<wire x1="33.85518125" y1="13.221653125" x2="33.85518125" y2="12.099440625" width="0.254" layer="1"/>
-<wire x1="33.85518125" y1="12.099440625" x2="34.187575" y2="11.767046875" width="0.254" layer="1"/>
-<wire x1="34.187575" y1="11.767046875" x2="36.23956875" y2="11.767046875" width="0.254" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="Q1" pad="1"/>
@@ -2292,13 +2295,13 @@ design rules under a new name.</description>
 <approved hash="6,1,280ee9e19d73f056"/>
 <approved hash="6,1,325d33e0f16d8577"/>
 <approved hash="6,1,3f2c650a826fd8ab"/>
-<approved hash="6,1,a68013565cbc509e"/>
 <approved hash="6,1,fc3e586c3a6daab8"/>
+<approved hash="6,1,a68013565cbc509e"/>
 <approved hash="6,1,31f636ac775a7000"/>
 <approved hash="6,1,435b32d1615f9d5e"/>
 <approved hash="6,16,5817feccb3a80056"/>
-<approved hash="6,16,f1e8d281cab1b704"/>
 <approved hash="6,16,45bbbf4decd7531a"/>
+<approved hash="6,16,f1e8d281cab1b704"/>
 <approved hash="6,16,133e016c9c888eda"/>
 <approved hash="6,16,422c2e304042fff6"/>
 <approved hash="6,16,b736c8833abd533a"/>
